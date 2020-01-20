@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Vladislav Zubko](https://up.htmlacademy.ru/htmlcss/27/user/573447).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Кан](https://htmlacademy.ru/profile/id241239).
 
 ---
 
