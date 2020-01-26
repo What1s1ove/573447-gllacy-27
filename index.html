@@ -12,7 +12,24 @@
         </a>
         <ul>
           <li>
-            <a href="catalog.html">Каталог</a>
+            <a href="#">Каталог</a>
+            <ul>
+              <li>
+                <a href="#">Новинки</a>
+              </li>
+              <li>
+                <a href="catalog.html">Сливочное</a>
+              </li>
+              <li>
+                <a href="#">Щербеты</a>
+              </li>
+              <li>
+                <a href="#">Фруктовый лед</a>
+              </li>
+              <li>
+                <a href="#">Мелорин</a>
+              </li>
+            </ul>
           </li>
           <li>
             <a href="#">Доставка и оплата</a>
@@ -23,11 +40,40 @@
         </ul>
       </div>
       <div>
+        <div>
+          <span>Поиск по сайту</span>
+          <form action="#">
+            <label for="search">
+              <input id="search" type="search" placeholder="Крем-брюле">
+            </label>
+          </form>
+        </div>
         <ul>
-          <li>Вход</li>
+          <li>
+            <span>Вход</span>
+            <form action="#">
+              <label for="login">
+                <input id="login" type="email" placeholder="email@example.com">
+              </label>
+              <label for="password">
+                <input id="password" type="password">
+              </label>
+              <div>
+                <button type="submit">Войти</button>
+              </div>
+              <p>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </p>
+            </form>
+          </li>
           <li>Пусто</li>
         </ul>
       </div>
+      <p>
+        С 10 до 20, ежедневно<br>
+        <a href="tel:+88124502525">8 812 450-25-25</a>
+      </p>
     </header>
     <main>
       <h1>Магазина мороженого - Gllacy</h1>
@@ -53,10 +99,10 @@
         <h2>Подпишитесь на нас!</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form action="#">
-          <label>
-            <input type="email" name="email" inputmode="email">
+          <label for="mailing">
+            <input id="mailing" type="email">
           </label>
-          <button>Отправить</button>
+          <button type="submit">Отправить</button>
         </form>
       </section>
     </aside>
