@@ -127,13 +127,101 @@
           <a href="index.html">Главная</a>
         </li>
         <li>
-          <a href="catalog.html">Каталог</a>
+          <a href="#">Каталог</a>
         </li>
         <li>
           <a>Сливочное</a>
         </li>
       </ul>
       <h1>Сливочное мороженое</h1>
+      <section>
+        <h2>Сортировка и фильтр мороженого</h2>
+        <form action="#">
+          <fieldset>
+            <legend>Сортировка:</legend>
+            <label for="filter-sort">
+              <select id="filter-sort">
+                <option>по популярности</option>
+                <option>сначала екдорогие</option>
+                <option>сначала дорогие</option>
+                <option>по жирности</option>
+              </select>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Цена: <output>100</output> руб. – <output>500</output> руб.</legend>
+            <div>
+              <span></span>
+              <span></span>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Жирность:</legend>
+            <ul>
+              <li>
+                <label for="filter-fat-0">
+                  0%
+                  <input id="filter-fat-0" type="radio" name="filter-fat">
+                </label>
+              </li>
+              <li>
+                <label for="filter-fat-b10">
+                  до 10%
+                  <input id="filter-fat-b10" type="radio" name="filter-fat" checked>
+                </label>
+              </li>
+              <li>
+                <label for="filter-fat-b30">
+                  до 30%
+                  <input id="filter-fat-b30" type="radio" name="filter-fat">
+                </label>
+              </li>
+              <li>
+                <label for="filter-fat-a30">
+                  выше 30%
+                  <input id="filter-fat-a30" type="radio" name="filter-fat">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Наполнители:</legend>
+            <ul>
+              <li>
+                <label for="filter-fill-chocolate">
+                  <input id="filter-fill-chocolate" type="checkbox" checked>
+                  шоколадные
+                </label>
+              </li>
+              <li>
+                <label for="filter-fill-sugar">
+                  <input id="filter-fill-sugar" type="checkbox" checked>
+                  сахарные присыпки
+                </label>
+              </li>
+              <li>
+                <label for="filter-fill-fruit">
+                  <input id="filter-fill-fruit" type="checkbox">
+                  фрукты
+                </label>
+              </li>
+              <li>
+                <label for="filter-fill-syrup">
+                  <input id="filter-fill-syrup" type="checkbox">
+                  сиропы
+                </label>
+              </li>
+              <li>
+                <label for="filter-fill-jam">
+                  <input id="filter-fill-jam" type="checkbox">
+                  сиропы
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Применить</button>
+        </form>
+      </section>
       <section>
         <h2>Сорта сливочного мороженого</h2>
         <ul>
@@ -258,6 +346,21 @@
             </article>
           </li>
         </ul>
+        <nav>
+          <a>
+            <span>Страницу назад</span>
+          </a>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ul>
+          <a href="#">
+            <span>Страницу вперед</span>
+          </a>
+        </nav>
       </section>
     </main>
     <footer>
