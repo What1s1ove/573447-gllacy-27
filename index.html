@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <input id="slider__item-one" type="checkbox" tabindex="-1" aria-hidden="true">
-    <input id="slider__item-two" type="checkbox" tabindex="-1" aria-hidden="true">
-    <input id="slider__item-three" type="checkbox" tabindex="-1" aria-hidden="true">
+    <input class="visually-hidden" id="slider__item-one" type="checkbox" tabindex="-1" aria-hidden="true">
+    <input class="visually-hidden" id="slider__item-two" type="checkbox" tabindex="-1" aria-hidden="true">
+    <input class="visually-hidden" id="slider__item-three" type="checkbox" tabindex="-1" aria-hidden="true">
     <div>
       <header>
         <div>
@@ -54,9 +55,9 @@
               </svg>
               Поиск по сайту
             </span>
-            <form action="#">
+            <form method="post" action="https://echo.htmlacademy.ru">
               <label for="site-search">
-                <input id="site-search" type="search" placeholder="Крем-брюле">
+                <input id="site-search" type="search" name="site-search" placeholder="Крем-брюле">
               </label>
             </form>
           </div>
@@ -69,12 +70,12 @@
                 </svg>                
                 Вход
               </a>
-              <form action="#">
+              <form method="post" action="https://echo.htmlacademy.ru">
                 <label for="signin-login">
-                  <input id="signin-login" type="email" placeholder="email@example.com">
+                  <input id="signin-login" type="email" name="signin-login" placeholder="email@example.com">
                 </label>
                 <label for="signin-password">
-                  <input id="signin-password" type="password">
+                  <input id="signin-password" type="password" name="signin-password">
                 </label>
                 <div>
                   <button type="submit">Войти</button>
@@ -94,9 +95,9 @@
         </p>
       </header>
       <main>
-        <h1>Магазина мороженого - Gllacy</h1>
+        <h1 class="visually-hidden">Магазина мороженого - Gllacy</h1>
         <section>
-          <h2>Виды мороженого которое у нас можно купить</h2>
+          <h2 class="visually-hidden">Виды мороженого которое у нас можно купить</h2>
           <ul>
             <li>
               <b>
@@ -121,13 +122,19 @@
             </li>
           </ul>
           <p>
-            <label for="slider__item-one"></label>
-            <label for="slider__item-two"></label>
-            <label for="slider__item-three"></label>
+            <label for="slider__item-one">
+              <span class="visually-hidden">Первый слайд</span>
+            </label>
+            <label for="slider__item-two">
+              <span class="visually-hidden">Второй слайд</span>
+            </label>
+            <label for="slider__item-three">
+              <span class="visually-hidden">Третий слайд</span>
+            </label>
           </p>
         </section>
         <section>
-          <h2>Акции нашего магазина</h2>
+          <h2 class="visually-hidden">Акции нашего магазина</h2>
           <ul>
             <li>
               <h3>Малинка даром!</h3>
@@ -142,7 +149,7 @@
           </ul>
         </section>
         <section>
-          <h2>Хиты продаж</h2>
+          <h2 class="visually-hidden">Хиты продаж</h2>
           <ul>
             <li>
               <article>
@@ -187,7 +194,7 @@
           </ul>
         </section>
         <section>
-          <h2>Подробнее о нашем магазине</h2>
+          <h2 class="visually-hidden">Подробнее о нашем магазине</h2>
           <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
           <ul>
             <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
@@ -205,18 +212,18 @@
           </a>
         </article>
         <section>
-          <h2>Подпишитесь на нас!</h2>
+          <h2 class="visually-hidden">Подпишитесь на нас!</h2>
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form action="#">
+          <form method="post" action="https://echo.htmlacademy.ru">
             <label for="mailing">
-              <input id="mailing" type="email" placeholder="email@example.com">
+              <input id="mailing" type="email" name="mailing" placeholder="email@example.com">
             </label>
             <button type="submit">Отправить</button>
           </form>
         </section>
       </aside>
       <section>
-        <h2>Как к нам добраться</h2>
+        <h2 class="visually-hidden">Как к нам добраться</h2>
         <address>
           <p>
             Адрес главного офиса<br>
@@ -239,22 +246,22 @@
         <ul>
           <li>
             <a href="#">
-              <span>На нашу страницу в твиттере</span>
+              <span class="visually-hidden">На нашу страницу в твиттере</span>
             </a>
           </li>
           <li>
             <a href="#">
-              <span>На нашу страницу в инстаграмме</span>
+              <span class="visually-hidden">На нашу страницу в инстаграмме</span>
             </a>
           </li>
           <li>
             <a href="#" >
-              <span>На нашу страницу в фейсбуке</span>
+              <span class="visually-hidden">На нашу страницу в фейсбуке</span>
             </a>
           </li>
           <li>
             <a href="#" aria-label="На нашу страницу во вконтакте">
-              <span>На нашу страницу во вконтакте</span>
+              <span class="visually-hidden">На нашу страницу во вконтакте</span>
             </a>
           </li>
         </ul>
@@ -281,15 +288,15 @@
       </footer>
       <section>
         <h2>Мы обязательно вам ответим!</h2>
-        <form action="#">
+        <form method="post" action="https://echo.htmlacademy.ru">
           <label for="feedback-name">
-            <input id="feedback-name" type="text">
+            <input id="feedback-name" type="text" name="feedback-name">
           </label>
           <label for="feedback-email">
-            <input id="feedback-email" type="email">
+            <input id="feedback-email" type="email" name="feedback-email">
           </label>
           <label for="feedback-text">
-            <textarea id="feedback-text"></textarea>
+            <textarea id="feedback-text" name="feedback-text"></textarea>
           </label>
           <button type="submit">Отправить</button>
         </form>
