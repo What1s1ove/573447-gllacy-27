@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
@@ -43,16 +44,17 @@
       </div>
       <div>
         <div>
-          <span>
+          <span tabindex="0">
             <svg fill="#FFF" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19" aria-hidden="true">
               <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
               <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
             </svg>
-            Поиск по сайту
+            Поиск
           </span>
-          <form action="#">
-            <label for="site-search">
-              <input id="site-search" type="search" placeholder="Крем-брюле">
+          <form method="post" action="https://echo.htmlacademy.ru">
+            <label>
+              <input type="search" name="site-search" placeholder="Крем-брюле">
+              <span class="visually-hidden">Поиск по нашему сайту</span>
             </label>
           </form>
         </div>
@@ -65,20 +67,22 @@
               </svg>                
               Вход
             </a>
-            <form action="#">
-              <label for="signin-login">
-                <input id="signin-login" type="email" placeholder="email@example.com">
+            <form method="post" action="https://echo.htmlacademy.ru">
+              <label>
+                <input type="email" name="signin-login" placeholder="email@example.com">
+                <span class="visually-hidden">Логин</span>
               </label>
-              <label for="signin-password">
-                <input id="signin-password" type="password">
+              <label>
+                <input type="password" name="signin-password">
+                <span class="visually-hidden">Пароль</span>
               </label>
               <div>
                 <button type="submit">Войти</button>
+                <p>
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </p>
               </div>
-              <p>
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-              </p>
             </form>
           </li>
           <li>Пусто</li>
@@ -90,9 +94,9 @@
       </p>
     </header>
     <main>
-      <h1>Магазина мороженого - Gllacy</h1>
+      <h1 class="visually-hidden">Магазина мороженого - Gllacy</h1>
       <section>
-        <h2>Виды мороженого которое у нас можно купить</h2>
+        <h2 class="visually-hidden">Виды мороженого которое у нас можно купить</h2>
         <ul>
           <li>
             <b>
@@ -117,19 +121,19 @@
           </li>
         </ul>
         <p>
-          <button type="button">
+          <button class="visually-hidden" type="button">
             <span>Первый слайд</span>
           </button>
-          <button type="button">
+          <button class="visually-hidden" type="button">
             <span>Второй слайд</span>
           </button>
-          <button type="button">
+          <button class="visually-hidden" type="button">
             <span>Третий слайд</span>
           </button>
         </p>
       </section>
       <section>
-        <h2>Акции нашего магазина</h2>
+        <h2 class="visually-hidden">Акции нашего магазина</h2>
         <ul>
           <li>
             <h3>Малинка даром!</h3>
@@ -144,7 +148,7 @@
         </ul>
       </section>
       <section>
-        <h2>Хиты продаж</h2>
+        <h2 class="visually-hidden">Хиты продаж</h2>
         <ul>
           <li>
             <article>
@@ -189,7 +193,7 @@
         </ul>
       </section>
       <section>
-        <h2>Подробнее о нашем магазине</h2>
+        <h2 class="visually-hidden">Подробнее о нашем магазине</h2>
         <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
         <ul>
           <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
@@ -207,18 +211,19 @@
         </a>
       </article>
       <section>
-        <h2>Подпишитесь на нас!</h2>
+        <h2 class="visually-hidden">Подпишитесь на нас!</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form action="#">
-          <label for="mailing">
-            <input id="mailing" type="email" placeholder="email@example.com">
+        <form method="post" action="https://echo.htmlacademy.ru">
+          <label>
+            <input type="email" name="mailing" placeholder="email@example.com">
+            <span class="visually-hidden">Емейл</span>
           </label>
           <button type="submit">Отправить</button>
         </form>
       </section>
     </aside>
     <section>
-      <h2>Как к нам добраться</h2>
+      <h2 class="visually-hidden">Как к нам добраться</h2>
       <address>
         <p>
           Адрес главного офиса<br>
@@ -241,22 +246,22 @@
       <ul>
         <li>
           <a href="#">
-            <span>На нашу страницу в твиттере</span>
+            <span class="visually-hidden">На нашу страницу в твиттере</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <span>На нашу страницу в инстаграмме</span>
+            <span class="visually-hidden">На нашу страницу в инстаграмме</span>
           </a>
         </li>
         <li>
           <a href="#" >
-            <span>На нашу страницу в фейсбуке</span>
+            <span class="visually-hidden">На нашу страницу в фейсбуке</span>
           </a>
         </li>
         <li>
-          <a href="#" aria-label="На нашу страницу во вконтакте">
-            <span>На нашу страницу во вконтакте</span>
+          <a href="#">
+            <span class="visually-hidden">На нашу страницу во вконтакте</span>
           </a>
         </li>
       </ul>
@@ -283,18 +288,24 @@
     </footer>
     <section>
       <h2>Мы обязательно вам ответим!</h2>
-      <form action="#">
-        <label for="feedback-name">
-          <input id="feedback-name" type="text">
+      <form method="post" action="https://echo.htmlacademy.ru">
+        <label>
+          <input type="text" name="feedback-name" placeholder="Имя Фамилия">
+          <span class="visually-hidden">Имя Фамилия</span>
         </label>
-        <label for="feedback-email">
-          <input id="feedback-email" type="email">
+        <label>
+          <input type="email" name="feedback-email" placeholder="email@example.com">
+          <span class="visually-hidden">Емейл</span>
         </label>
-        <label for="feedback-text">
-          <textarea id="feedback-text"></textarea>
+        <label>
+          <textarea name="feedback-text" placeholder="В свободной форме"></textarea>
+          <span class="visually-hidden">Письмо в свободной форме</span>
         </label>
         <button type="submit">Отправить</button>
       </form>
+      <button type="button">
+        <span class="visually-hidden">Закрыть модальное окно</span>
+      </button>
     </section>
   </body>
 </html>
