@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
@@ -51,8 +52,9 @@
             Поиск по сайту
           </span>
           <form method="post" action="https://echo.htmlacademy.ru">
-            <label for="site-search">
-              <input id="site-search" type="search" name="site-search" placeholder="Крем-брюле">
+            <label>
+              <input type="search" name="site-search" placeholder="Крем-брюле">
+              <span class="visually-hidden">Поиск по нашему сайту</span>
             </label>
           </form>
         </div>
@@ -65,12 +67,14 @@
               </svg>                
               Вход
             </a>
-            <form action="#">
-              <label for="signin-login">
-                <input id="signin-login" type="email" placeholder="email@example.com">
+            <form method="post" action="https://echo.htmlacademy.ru">
+              <label>
+                <input type="email" name="signin-login" placeholder="email@example.com">
+                <span class="visually-hidden">Логин</span>
               </label>
-              <label for="signin-password">
-                <input id="signin-password" type="password">
+              <label>
+                <input type="password" name="signin-password">
+                <span class="visually-hidden">Пароль</span>
               </label>
               <div>
                 <button type="submit">Войти</button>
@@ -89,7 +93,7 @@
                   <tr>
                     <td>
                       <span class="visually-hidden">
-                        Кнопки
+                        Действия
                       </span>
                     </td>
                     <td>
@@ -118,7 +122,7 @@
                     </td>
                     <td>
                       <figure>
-                        <img src="img/picture-basket-icecream1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                        <img src="img/picture-basket-icecream1.jpg" width="33" height="33" alt="">
                         <figcaption>Пломбир с апельсиновым джемом</figcaption>
                       </figure>
                     </td>
@@ -137,7 +141,7 @@
                     </td>
                     <td>
                       <figure>
-                        <img src="img/picture-basket-icecream2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                        <img src="img/picture-basket-icecream2.jpg" width="33" height="33" alt="">
                         <figcaption>Клубничный пломбир с присыпкой из белого шоколада</figcaption>
                       </figure>
                     </td>
@@ -175,7 +179,7 @@
       </ul>
       <h1>Сливочное мороженое</h1>
       <section>
-        <h2>Сортировка и фильтр мороженого</h2>
+        <h2 class="visually-hidden">Сортировка и фильтр мороженого</h2>
         <form method="post" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Сортировка:</legend>
@@ -197,27 +201,27 @@
             <legend>Жирность:</legend>
             <ul>
               <li>
-                <label for="filter-fat-0">
+                <label>
                   0%
-                  <input id="filter-fat-0" type="radio" name="filter-fat" value="filter-fat-0">
+                  <input type="radio" name="filter-fat" value="filter-fat-0">
                 </label>
               </li>
               <li>
-                <label for="filter-fat-b10">
+                <label>
                   до 10%
-                  <input id="filter-fat-b10" type="radio" name="filter-fat" value="filter-fat-b10" checked>
+                  <input type="radio" name="filter-fat" value="filter-fat-b10" checked>
                 </label>
               </li>
               <li>
-                <label for="filter-fat-b30">
+                <label>
                   до 30%
-                  <input id="filter-fat-b30" type="radio" name="filter-fat" value="filter-fat-b30">
+                  <input type="radio" name="filter-fat" value="filter-fat-b30">
                 </label>
               </li>
               <li>
-                <label for="filter-fat-a30">
+                <label>
                   выше 30%
-                  <input id="filter-fat-a30" type="radio" name="filter-fat" value="filter-fat-a30">
+                  <input type="radio" name="filter-fat" value="filter-fat-a30">
                 </label>
               </li>
             </ul>
@@ -226,33 +230,33 @@
             <legend>Наполнители:</legend>
             <ul>
               <li>
-                <label for="filter-fill-chocolate">
-                  <input id="filter-fill-chocolate" type="checkbox" name="filter-fill-chocolate" checked>
+                <label>
+                  <input type="checkbox" name="filter-fill-chocolate" checked>
                   шоколадные
                 </label>
               </li>
               <li>
-                <label for="filter-fill-sugar">
-                  <input id="filter-fill-sugar" type="checkbox" name="filter-fill-sugar"" checked>
+                <label>
+                  <input type="checkbox" name="filter-fill-sugar"" checked>
                   сахарные присыпки
                 </label>
               </li>
               <li>
-                <label for="filter-fill-fruit">
-                  <input id="filter-fill-fruit" type="checkbox" name="filter-fill-fruit">
+                <label>
+                  <input type="checkbox" name="filter-fill-fruit">
                   фрукты
                 </label>
               </li>
               <li>
-                <label for="filter-fill-syrup">
-                  <input id="filter-fill-syrup" type="checkbox" name="filter-fill-syrup">
+                <label>
+                  <input type="checkbox" name="filter-fill-syrup">
                   сиропы
                 </label>
               </li>
               <li>
-                <label for="filter-fill-jam">
-                  <input id="filter-fill-jam" type="checkbox" name="filter-fill-jam">
-                  сиропы
+                <label>
+                  <input type="checkbox" name="filter-fill-jam">
+                  джемы
                 </label>
               </li>
             </ul>
@@ -384,21 +388,33 @@
             </article>
           </li>
         </ul>
-        <div>
-          <a>
-            <span class="visualli-hidden">Страницу назад</span>
-          </a>
-          <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-          </ul>
-          <a href="#">
-            <span class="visualli-hidden">Страницу вперед</span>
-          </a>
-        </div>
+        <ul>
+          <li>
+            <a>
+              <span class="visually-hidden">Страницу назад</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">4</a>
+          </li>
+          <li>
+            <a href="#">5</a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="visually-hidden">Страницу вперед</span>
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
     <footer>
