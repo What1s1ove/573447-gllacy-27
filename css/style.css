@@ -106,6 +106,10 @@ body.slider-three {
   display: block;
 }
 
+.page-header__nav-item--avtive {
+  background-color: #d07058;
+}
+
 .page-header__nav-sub-list {
   display: none;
 
@@ -145,6 +149,7 @@ body.slider-three {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+  font-weight: 500;
 
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -208,6 +213,29 @@ body.slider-three {
   text-decoration-color: rgba(232, 77, 55, 0.3);
 }
 
+.page-header__user-item--basket:hover .page-header__form-basket {
+  display: block;
+}
+
+.page-header__form-basket {
+  display: none;
+
+  background-color: #f8f7f4;
+}
+
+.page-header__form-table {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.page-header__basket-cancel {
+  background: url("../img/icon-cross--small.svg") no-repeat 50% 50%;
+}
+
+.page-header__basket-price span {
+  color: #999999;
+}
+
 .page-header__schedule {
   font-size: 14px;
   line-height: 16px;
@@ -224,6 +252,10 @@ body.slider-three {
   list-style: none;
 }
 
+.icecream__item:hover .button {
+  display: block;
+}
+
 .icecream__item-price {
   font-size: 45px;
   line-height: 45p;
@@ -233,10 +265,25 @@ body.slider-three {
   font-size: 30px;
 }
 
-.icecream__item h3 {
-  font-size: 16px;
+.icecream__item-title {
+  color: #ffffff;
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.3);
+}
+
+.icecream__item-title:hover,
+.icecream__item-title:focus,
+.icecream__item-title:active {
+  color: #ffbc9e;
+  text-decoration-color: rgba(255, 188, 158, 0.3);
+}
+
+.icecream__item-title h3 {
+  font-size: 16px;
+}
+
+.icecream__item .button {
+  display: none;
 }
 
 .page-footer__social-list {
@@ -490,4 +537,158 @@ body.slider-three {
 
 .callback-popup__close-button {
   background: url("../img//icon-cross--big.svg") no-repeat 50% 50%;
+}
+
+.breadcrumbs-list {
+  list-style: none;
+}
+
+.breadcrumbs-list__item a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.breadcrumbs-list__item a[href]:hover,
+.breadcrumbs-list__item a[href]:focus,
+.breadcrumbs-list__item a[href]:active {
+  color: #ffbc9e;
+
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
+}
+
+.breadcrumbs-list__item::after {
+  content: '»';
+}
+
+.breadcrumbs-list__item--active a {
+  border-bottom: 0;
+}
+
+.breadcrumbs-list__item--active::after {
+  display: none;
+}
+
+.main-title {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+.filter__form legend {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.filter__sort select {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.filter__sort select:hover,
+.filter__sort select:focus {
+  color: #323232;
+}
+
+.filter__price {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.filter__price-output {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.filter__fat-list {
+  list-style: none;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.filter__fat-list li {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.filter__fill-list {
+  list-style: none;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.filter__fill-list li {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.filter__submit-button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  vertical-align: top;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #a6b7ad;
+
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+
+  cursor: pointer;
+}
+
+.filter__submit-button:hover {
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.filter__submit-button:active {
+  color: #323232;
+
+  box-shadow: inset 0px 2px 1px 0px #696969
+}
+
+.catalog__pagination-list {
+  list-style: none;
+}
+
+.catalog__pagination-item a {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.catalog__pagination-item a[href]:hover,
+.catalog__pagination-item a[href]:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.catalog__pagination-item--prev a::before {
+  transform: rotate(180deg);
+
+  background-image: url("../img/icon-right-small.svg");
+}
+
+.catalog__pagination-item--next a::before {
+  background-image: url("../img/icon-right-small.svg");
+}
+
+.catalog__pagination-item--active a {
+  color: #323232;
+
+  background-color: #ffffff;
 }
