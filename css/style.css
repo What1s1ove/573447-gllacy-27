@@ -483,7 +483,12 @@ body.slider-three {
   position: relative;
 
   width: 267px;
-  padding-bottom: 10px;
+  margin-top: 40px;
+  padding: 0 0 10px;
+}
+
+.icecream__item:hover {
+  z-index: 1;
 }
 
 .icecream__item:hover::before {
@@ -630,7 +635,7 @@ body.slider-three {
 
 .stocks {
   width: 1200px;
-  margin: 0 auto 40px;
+  margin: 0 auto;
   padding: 0 27px;
 }
 
@@ -923,7 +928,17 @@ body.slider-three {
 }
 
 .breadcrumbs-list {
+  display: flex;
+
+  width: 1200px;
+  margin: 15px auto 13px;
+  padding: 0 27px;
+
   list-style: none;
+}
+
+.breadcrumbs-list__item:not(:last-child) {
+  margin: 0 5px 0 0;
 }
 
 .breadcrumbs-list__item a {
@@ -956,24 +971,60 @@ body.slider-three {
 }
 
 .main-title {
+  width: 1200px;
+  margin: 0 auto 30px;
+  padding: 0 27px;
+
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
 }
 
+.filter {
+  position: relative;
+
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
+.filter__form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filter__form fieldset {
+  margin: 0 15px 18px 0;
+  padding: 0;
+
+  border: 0;
+}
+
 .filter__form legend {
+  margin: 0 0 5px;
+  padding: 0 0 0 15px;
+  
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
 }
 
 .filter__sort select {
+  padding: 8px 15px;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color: #ffffff;
 
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
   background-color: rgba(255, 255, 255, 0.2);
+
+  border-radius: 20px;
 }
 
 .filter__sort select:hover,
@@ -981,41 +1032,63 @@ body.slider-three {
   color: #323232;
 }
 
-.filter__price {
-  background-color: rgba(255, 255, 255, 0.2);
-}
+.filter__price-controls {
+  padding: 8px 22px;
 
-.filter__price-output {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  border-radius: 20px;
 }
 
 .filter__fat-list {
+  display: flex;
+
+  margin: 0;
+  padding: 8px 14px;
+
   list-style: none;
 
   background-color: rgba(255, 255, 255, 0.2);
+
+  border-radius: 20px;
 }
 
 .filter__fat-list li {
+  margin: 0 18px 0 0;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
 }
 
+.filter__fat-list li:last-child {
+  margin: 0;
+}
+
 .filter__fill-list {
+  display: flex;
+
+  margin: 0;
+  padding: 8px 14px;
+
   list-style: none;
 
   background-color: rgba(255, 255, 255, 0.2);
+
+  border-radius: 20px;
 }
 
 .filter__fill-list li {
+  margin: 0 18px 0 0;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
 }
 
 .filter__submit-button {
+  padding: 7px 27px;
+
   font-family: inherit;
   font-size: 16px;
   line-height: 18px;
@@ -1044,15 +1117,56 @@ body.slider-three {
   box-shadow: inset 0px 2px 1px 0px #696969
 }
 
+.catalog {
+  position: relative;
+ 
+  width: 1200px;
+  margin: 0 auto 18px;
+  padding: 0 27px 30px;
+}
+
+.catalog::after {
+  position: absolute;
+  bottom: 0;
+
+  content: "";
+  width: 1146px;
+  height: 1px;
+
+  background-color: rgba(252, 253, 252, 0.3);
+}
+
+.catalog__list {
+  margin-top: -20px;
+}
+
 .catalog__pagination-list {
+  display: flex;
+  justify-content: flex-end;
+
+  margin: 73px 0 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .catalog__pagination-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 27px;
+  height: 27px;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color: #ffffff;
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  
+  border-radius: 50%;
 }
 
 .catalog__pagination-item a[href]:hover,
@@ -1060,14 +1174,18 @@ body.slider-three {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.catalog__pagination-item--prev a::before {
+.catalog__pagination-item--prev a {
+  margin: 0 5px 0 0;
+
   transform: rotate(180deg);
 
-  background-image: url("../img/icon-right-small.svg");
+  background-image: url("../img/icon-arrow.svg");
 }
 
-.catalog__pagination-item--next a::before {
-  background-image: url("../img/icon-right-small.svg");
+.catalog__pagination-item--next a {
+  margin: 0 0 0 5px;
+
+  background-image: url("../img/icon-arrow.svg");
 }
 
 .catalog__pagination-item--active a {
