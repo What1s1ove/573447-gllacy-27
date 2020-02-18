@@ -1056,7 +1056,6 @@ body.slider-three {
 .filter__fat-list li {
   margin: 0 18px 0 0;
 
-  font-size: 16px;
   line-height: 18px;
   font-weight: 500;
 }
@@ -1081,7 +1080,6 @@ body.slider-three {
 .filter__fill-list li {
   margin: 0 18px 0 0;
 
-  font-size: 16px;
   line-height: 18px;
   font-weight: 500;
 }
@@ -1158,7 +1156,6 @@ body.slider-three {
   width: 27px;
   height: 27px;
 
-  font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color: #ffffff;
