@@ -845,8 +845,9 @@ body.slider-three {
 
 .map__address {
   position: absolute;
+  left: calc(50% + 423px);
   top: 63px;
-  right: 27px;
+  transform: translateX(-50%);
 
   min-width: 302px;
   padding: 31px 25px;
