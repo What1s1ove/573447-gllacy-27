@@ -259,6 +259,7 @@ body.slider-three {
 .page-header__user-item {
   position: relative;
 
+  min-height: 37px;
   margin-right: 10px;
 }
 
@@ -285,6 +286,7 @@ body.slider-three {
 .page-header__user-item-link:hover,
 .page-header__user-item-link:focus {
   color: #323232;
+
   background-color: #ffffff;
 }
 
@@ -308,17 +310,55 @@ body.slider-three {
 
 .page-header__search-form {
   position: absolute;
+  top: 37px;
+  right: 0;
 
   display: none;
+
+  padding: 20px 15px;
   
   background-color: #f8f7f4;
+
+  border-radius: 5px;
+
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 .page-header__search-form input[type="search"] {
+  width: 311px;
+  padding: 10px 14px 8px;
+
+  
   font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #323232;
 
   background-color: #ffffff;
+
+  border: 1px solid rgba(153, 153, 153, 0.52);
+  border-radius: 5px;
 }
+
+.page-header__search-form input[type="search"]::placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
+.page-header__search-form input[type="search"]:hover {
+  padding: 9px 13px 7px;
+
+  border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.page-header__search-form input[type="search"]:focus {
+  padding: 9px 13px 7px;
+
+  border: 2px solid rgba(46, 136, 228, 0.52);
+
+  outline: 0;
+}
+
 
 .page-header__user-item--login:hover .page-header__form-login {
   display: block;
@@ -326,20 +366,81 @@ body.slider-three {
 
 .page-header__form-login {
   position: absolute;
+  top: 37px;
+  right: 0;
 
   display: none;
 
+  padding: 22px 19px 22px 17px;
+
   background-color: #f8f7f4;
+
+  border-radius: 5px;
+
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 .page-header__form-login input[type="email"],
 .page-header__form-login input[type="password"] {
+  display: inline-block;
+
+  width: 241px;
+  margin: 0 0 20px;
+  padding: 10px 14px 8px;
+
+  vertical-align: top;
   font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #323232;
 
   background-color: #ffffff;
+
+  border: 1px solid rgba(153, 153, 153, 0.52);
+  border-radius: 5px;
+}
+
+.page-header__form-login input[type="email"]::placeholder,
+.page-header__form-login input[type="password"]::placeholder {
+  font-weight: 400;
+  color: #999999;
+} 
+
+.page-header__form-login input[type="email"]:hover,
+.page-header__form-login input[type="password"]:hover {
+  padding: 9px 13px 7px;
+
+  border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.page-header__form-login input[type="email"]:focus,
+.page-header__form-login input[type="password"]:focus {
+  padding: 9px 13px 7px;
+
+  border: 2px solid rgba(46, 136, 228, 0.52);
+
+  outline: 0;
+}
+
+.page-header__form-login-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.page-header__form-login-button {
+  padding: 11px 25px;
+
+  border-radius: 20px;
+}
+
+.page-header__form-login-links {
+  margin: 0;
 }
 
 .page-header__form-login-link {
+  display: block;
+
   font-size: 13px;
   line-height: 24px;
   color: #323232;
@@ -351,6 +452,7 @@ body.slider-three {
 .page-header__form-login-link:focus,
 .page-header__form-login-link:active {
   color: #e84d37;
+
   text-decoration-color: rgba(232, 77, 55, 0.3);
 }
 
@@ -414,6 +516,7 @@ body.slider-three {
 
 .page-footer__social-list {
   display: flex;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
@@ -446,6 +549,7 @@ body.slider-three {
 
 .page-footer__contact-list {
   display: flex;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
@@ -656,7 +760,7 @@ body.slider-three {
 
 .offers {
   width: 1200px;
-  margin: 0 auto 40px;
+  margin: 0 auto 20px;
   padding: 0 27px;
 }
 
@@ -706,6 +810,7 @@ body.slider-three {
 
 .stocks__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   margin: 0;
@@ -720,6 +825,7 @@ body.slider-three {
 
   width: 560px;
   padding: 19px 20px;
+  margin: 20px 0 0;
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -890,13 +996,37 @@ body.slider-three {
 
 .mailing__form input[type="email"] {
   width: 370px;
+  padding: 10px 14px 8px;
 
   line-height: 24px;
   font-weight: 700;
   color: #323232;
 
   background-color: #ffffff;
+
+  border: 1px solid rgba(153, 153, 153, 0.52);
+  border-radius: 5px;
 }
+
+.mailing__form input[type="email"]::placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
+.mailing__form input[type="email"]:hover {
+  padding: 9px 13px 7px;
+
+  border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.mailing__form input[type="email"]:focus {
+  padding: 9px 13px 7px;
+
+  border: 2px solid rgba(46, 136, 228, 0.52);
+
+  outline: 0;
+}
+
 
 .mailing__form .button {
   padding: 10px 19px;
