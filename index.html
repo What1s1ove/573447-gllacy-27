@@ -128,17 +128,23 @@
             <a class="button" href="#">Давайте оба!</a>
           </li>
         </ul>
-        <p>
-          <button class="visually-hidden" type="button">
-            <span>Первый слайд</span>
-          </button>
-          <button class="visually-hidden" type="button">
-            <span>Второй слайд</span>
-          </button>
-          <button class="visually-hidden" type="button">
-            <span>Третий слайд</span>
-          </button>
-        </p>
+        <ul class="offers__slider-controls">
+          <li>
+            <button class="offers__slider-control offers__slider-control--active" type="button">
+              <span class="visually-hidden">Первый слайд</span>
+            </button>
+          </li>
+          <li>
+            <button class="offers__slider-control" type="button">
+              <span class="visually-hidden">Второй слайд</span>
+            </button>
+          </li>
+          <li>
+            <button class="offers__slider-control" type="button">
+              <span class="visually-hidden">Третий слайд</span>
+            </button>
+          </li>
+        </ul>
       </section>
       <section class="stocks">
         <h2 class="visually-hidden">Акции нашего магазина</h2>
@@ -332,7 +338,7 @@
         <small>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy &#169; 2019</a></small>
       </p>
     </footer>
-    <div class="modal" hidden>
+    <div class="modal">
       <section class="callback-popup">
         <h2 class="callback-popup__title">Мы обязательно вам ответим!</h2>
         <form class="callback-popup__form" method="post" action="https://echo.htmlacademy.ru">

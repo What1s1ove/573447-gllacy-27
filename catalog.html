@@ -77,87 +77,97 @@
               <input type="password" name="signin-password">
               <span class="visually-hidden">Пароль</span>
             </label>
-            <div>
+            <div class="page-header__form-login-buttons">
               <button class="page-header__form-login-button button" type="submit">Войти</button>
-              <p>
+              <p class="page-header__form-login-links">
                 <a class="page-header__form-login-link" href="#">Забыли пароль?</a>
                 <a class="page-header__form-login-link" href="#">Новая регистрация</a>
               </p>
             </div>
           </form>
         </li>
-        <li class="page-header__user-item page-header__user-item--basket">
+        <li class="page-header__user-item page-header__user-item--active page-header__user-item--basket">
           <a class="page-header__user-item-link" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
+              <path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/>
+              <circle cx="6.984" cy="18" r="2" fill="#343434"/>
+              <circle cx="15.984" cy="18" r="2" fill="#343434"/>
+              <path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
+          </svg>
             2 товара
           </a>
           <form class="page-header__form-basket" method="post" action="https://echo.htmlacademy.ru">
             <table class="page-header__basket-table">
-              <thead>
+              <thead class="visually-hidden">
                 <tr>
-                  <td>
+                  <th>
                     <span class="visually-hidden">
                       Действия
                     </span>
-                  </td>
-                  <td>
+                  </th>
+                  <th>
                     <span class="visually-hidden">
                       Мороженое
                     </span>
-                  </td>
-                  <td>
+                  </th>
+                  <th>
                     <span class="visually-hidden">
                       Количество
                     </span>
-                  </td>
-                  <td>
+                  </th>
+                  <th>
                     <span class="visually-hidden">
                       Цена
                     </span>
-                  </td>
+                  </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>
+                  <td class="page-header__basket-control">
                     <button class="page-header__basket-cancel" type="button">
                       <span class="visually-hidden">Убрать из корзины</span>
                     </button>
                   </td>
-                  <td>
-                    <p>
+                  <td class="page-header__basket-desc">
+                    <p class="page-header__basket-img-wrapper">
                       <img src="img/picture-basket-icecream1.jpg" width="33" height="33" alt="">
-                      Пломбир с апельсиновым джемом
+                      <span>
+                        Пломбир с апельсиновым джемом
+                      </span>
                     </p>
                   </td>
-                  <td class="page-header__basket-price">
-                    1,5 кг <span>200 руб</span>
+                  <td class="page-header__basket-quality">
+                    1,5 кг &#215; <span>200 руб</span>
                   </td>
-                  <td>
-                    300 руб
+                  <td class="page-header__basket-price">
+                    300 руб.
                   </td>
                 </tr>
                 <tr>
-                  <td>
+                  <td class="page-header__basket-control">
                     <button class="page-header__basket-cancel" type="button">
                       <span class="visually-hidden">Убрать из корзины</span>
                     </button>
                   </td>
-                  <td>
-                    <p>
+                  <td class="page-header__basket-desc">
+                    <p class="page-header__basket-img-wrapper">
                       <img src="img/picture-basket-icecream2.jpg" width="33" height="33" alt="">
-                      Клубничный пломбир с присыпкой из белого шоколада
+                      <span>
+                        Клубничный пломбир с присыпкой из белого шоколада
+                      </span>
                     </p>
                   </td>
-                  <td class="page-header__basket-price">
-                    1,5 кг <span>300 руб</span>
+                  <td class="page-header__basket-quality">
+                    1,5 кг &#215; <span>300 руб</span>
                   </td>
-                  <td>
-                    450 руб
+                  <td class="page-header__basket-price">
+                    450 руб.
                   </td>
                 </tr>
               </tbody>
             </table>
-            <b>Итого: <output name="order-price">750</output> руб.</b>
+            <b class="page-header__form-basket-output">Итого: <output name="order-price">750</output> руб.</b>
             <button class="button" type="submit">Оформить заказ</button>
           </form>
         </li>
