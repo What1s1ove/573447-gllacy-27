@@ -16,7 +16,7 @@
         <nav class="page-header__nav">
           <ul class="page-header__nav-list">
             <li class="page-header__nav-item">
-              <a href="#">Каталог</a>
+              <a class="page-header__nav-link" href="#">Каталог</a>
               <ul class="page-header__nav-sub-list">
                 <li class="page-header__nav-sub-item">
                   <a href="#">Новинки</a>
@@ -36,21 +36,21 @@
               </ul>
             </li>
             <li class="page-header__nav-item">
-              <a href="#">Доставка и оплата</a>
+              <a class="page-header__nav-link" href="#">Доставка и оплата</a>
             </li>
             <li class="page-header__nav-item">
-              <a href="#">О Компании</a>
+              <a class="page-header__nav-link" href="#">О Компании</a>
             </li>
           </ul>
         </nav>
       </div>
       <ul class="page-header__user-list">
         <li class="page-header__user-item page-header__user-item--search">
-          <a class="page-header__user-item-link" href="#">
+          <a class="page-header__user-item-link page-header__user-item-link--search" href="#">
             <svg fill="#FFF" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
               <path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"></path>
             </svg>
-            Поиск
+            <span class="visually-hidden">Поиск</span>
           </a>
           <form class="page-header__search-form" method="post" action="https://echo.htmlacademy.ru">
             <label>
@@ -74,12 +74,12 @@
               <span class="visually-hidden">Логин</span>
             </label>
             <label>
-              <input type="password" name="signin-password">
+              <input type="password" name="signin-password" placeholder="••••••••">
               <span class="visually-hidden">Пароль</span>
             </label>
-            <div>
+            <div class="page-header__form-login-buttons">
               <button class="page-header__form-login-button button" type="submit">Войти</button>
-              <p>
+              <p class="page-header__form-login-links">
                 <a class="page-header__form-login-link" href="#">Забыли пароль?</a>
                 <a class="page-header__form-login-link" href="#">Новая регистрация</a>
               </p>
@@ -88,6 +88,10 @@
         </li>
         <li class="page-header__user-item page-header__user-item--basket">
           <a class="page-header__user-item-link" href="#">
+            <svg fill="#FFF" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
+              <path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
+              <circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/>
+            </svg>
             Пусто
           </a>
         </li>
@@ -124,17 +128,23 @@
             <a class="button" href="#">Давайте оба!</a>
           </li>
         </ul>
-        <p>
-          <button class="visually-hidden" type="button">
-            <span>Первый слайд</span>
-          </button>
-          <button class="visually-hidden" type="button">
-            <span>Второй слайд</span>
-          </button>
-          <button class="visually-hidden" type="button">
-            <span>Третий слайд</span>
-          </button>
-        </p>
+        <ul class="offers__slider-controls">
+          <li>
+            <button class="offers__slider-control offers__slider-control--active" type="button">
+              <span class="visually-hidden">Первый слайд</span>
+            </button>
+          </li>
+          <li>
+            <button class="offers__slider-control" type="button">
+              <span class="visually-hidden">Второй слайд</span>
+            </button>
+          </li>
+          <li>
+            <button class="offers__slider-control" type="button">
+              <span class="visually-hidden">Третий слайд</span>
+            </button>
+          </li>
+        </ul>
       </section>
       <section class="stocks">
         <h2 class="visually-hidden">Акции нашего магазина</h2>
@@ -325,7 +335,7 @@
       </ul>
       <p class="page-footer__copyright">
         <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTMLAcademy">
-        <small>Сделано в <a href="https://htmlacademy.ru/">HTML Academy &#169; 2019</a></small>
+        <small>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy &#169; 2019</a></small>
       </p>
     </footer>
     <div class="modal" hidden>
