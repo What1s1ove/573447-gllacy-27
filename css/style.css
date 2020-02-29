@@ -289,6 +289,10 @@ body.slider-three {
   margin-right: 10px;
 }
 
+.page-header__user-item:last-child {
+  margin-right: 0;
+}
+
 .page-header__user-item--active .page-header__user-item-link {
   color: #323232;
 
@@ -599,7 +603,7 @@ body.slider-three {
 .page-header__schedule {
   position: absolute;
   top: 100%;
-  right: 0;
+  right: 27px;
 
   margin: 0;
 
@@ -612,7 +616,7 @@ body.slider-three {
 .page-header__schedule a {
   display: inline-block;
 
-  margin-top: 8px;
+  margin-top: 5px;
 
   font-size: 22px;
   line-height: 24px;
@@ -622,14 +626,16 @@ body.slider-three {
 .page-footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 
   width: 1200px;
+  min-height: 100px;
   margin: 0 auto;
   padding: 0 27px 25px;
 }
 
 .page-footer__social-list {
+  align-self: center;
+
   display: flex;
   flex-wrap: wrap;
 
@@ -649,6 +655,8 @@ body.slider-three {
   width: 38px;
   height: 38px;
 
+  vertical-align: top;
+  
   background-repeat: no-repeat;
   background-position: 50% 50%;
 
@@ -663,11 +671,13 @@ body.slider-three {
 }
 
 .page-footer__contact-list {
+  align-self: center;
+
   display: flex;
   flex-wrap: wrap;
 
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 5px;
 
   list-style: none;
 }
@@ -716,14 +726,18 @@ body.slider-three {
 }
 
 .page-footer__production-item--heart {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .page-footer__copyright {
   display: flex;
   flex-direction: column;
 
-  margin: 0 0 8px;
+  margin: 0;
+}
+
+.page-footer__copyright img {
+  margin-bottom: 7px;
 }
 
 .page-footer__copyright small {
@@ -801,7 +815,7 @@ body.slider-three {
 .icecream__item-img-wrapper {
   position: relative;
 
-  margin: 0 0 10px;
+  margin: 0 0 7px;
 }
 
 .icecream__item-img-wrapper--hit::before {
@@ -823,12 +837,13 @@ body.slider-three {
 
 .icecream__item-price {
   position: absolute;
-  bottom: 18px;
+  bottom: 15px;
   left: 0;
 
   white-space: nowrap;
   font-size: 45px;
-  line-height: 45p;
+  line-height: 45px;
+  letter-spacing: -1.5px;
 }
 
 .icecream__item-price span {
@@ -893,12 +908,12 @@ body.slider-three {
   flex-direction: column;
   align-items: center;
 
-  padding-top: 325px;
+  padding: 320px 0 0;
 }
 
 .offers__slider-item b {
   display: inline-block;
-  margin-bottom: 25px;
+  margin: 0 0 30px;
 
   text-align: center;
   font-size: 60px;
@@ -907,7 +922,7 @@ body.slider-three {
 }
 
 .offers__slider-item .button {
-  padding: 16px 42px;
+  padding: 10px 42px;
 
   font-size: 32px;
   line-height: 44px;
@@ -921,7 +936,7 @@ body.slider-three {
 
 .offers__slider-controls {
   position: absolute;
-  bottom: 20px;
+  bottom: 18px;
   left: 27px;
 
   display: flex;
@@ -979,7 +994,7 @@ body.slider-three {
   flex-direction: column;
 
   width: 560px;
-  padding: 19px 20px;
+  padding: 15px 20px 23px;
   margin: 20px 0 0;
 
   background-repeat: no-repeat;
@@ -999,7 +1014,7 @@ body.slider-three {
 }
 
 .stocks__item h3 {
-  margin: 0 0 20px;
+  margin: 0 0 15px;
 
   font-size: 35px;
   line-height: 41px;
@@ -1007,7 +1022,7 @@ body.slider-three {
 }
 
 .stocks__item p {
-  margin: 0 0 40px;
+  margin: 0 0 45px;
 
   font-size: 18px;
 
@@ -1024,14 +1039,14 @@ body.slider-three {
 
 .hits {
   width: 1200px;
-  margin: 0 auto 30px;
+  margin: 0 auto 28px;
   padding: 0 27px;
 }
 
 .advantages {
   width: 1146px;
   margin: 0 auto 40px;
-  padding: 20px 21px 15px;
+  padding: 23px 20px 15px;
 
   background: #e2d0a6 url("../img/bg-wafer.jpg");
 
@@ -1061,9 +1076,9 @@ body.slider-three {
 .advantages__list-item {
   position: relative;
 
-  width: 535px;
-  margin: 0 0 10px;
-  padding: 15px 0 0 56px;
+  width: 539px;
+  margin: 0 0 7px;
+  padding: 15px 0 0 58px;
 
   color: #323232;
 
@@ -1098,7 +1113,7 @@ body.slider-three {
 }
 
 .main-article p {
-  margin: 0 0 10px;
+  margin: 0 0 4px;
 
   color: #323232;
   font-weight: 500;
@@ -1130,7 +1145,7 @@ body.slider-three {
 .mailing__wrapper {
   width: 100%;
   height: 100%;
-  padding: 30px 20px;
+  padding: 30px 22px;
 
   background-color: #f8f7f4;
 
@@ -1150,7 +1165,7 @@ body.slider-three {
 }
 
 .mailing__form input[type="email"] {
-  width: 370px;
+  width: 367px;
   padding: 10px 14px 8px;
 
   line-height: 24px;
@@ -1183,11 +1198,11 @@ body.slider-three {
 }
 
 .mailing__form .button {
-  padding: 10px 19px;
+  padding: 10px 17px;
 }
 
 .map {
-  margin: 0 0 18px;
+  margin: 0 0 17px;
 
   position: relative;
 }
@@ -1199,7 +1214,7 @@ body.slider-three {
   transform: translateX(-50%);
 
   min-width: 302px;
-  padding: 31px 25px;
+  padding: 30px 25px 31px;
 
   font-size: 14px;
   line-height: 20px;
@@ -1212,25 +1227,23 @@ body.slider-three {
 }
 
 .map__address-street {
-  margin: 0 0 22px;
+  margin: 0 0 20px;
 }
 
 .map__address-street b {
   display: block;
-
-  margin-top: 9px;
 
   font-size: 18px;
   line-height: 24px;
 }
 
 .map__address-number {
-  margin: 0 0 25px;
+  margin: 0 0 23px;
 }
 
 .map__address-number a {
   font-size: 18px;
-  line-height: 24px;
+  line-height: 30px;
   font-weight: 700;
   color: #323232;
 }
