@@ -1182,7 +1182,6 @@ body.slider-three {
   outline: 0;
 }
 
-
 .mailing__form .button {
   padding: 10px 19px;
 }
@@ -1240,24 +1239,6 @@ body.slider-three {
   padding: 10px 28px;
 }
 
-.callback-popup__title {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 500;
-  color: #323232;
-}
-
-.callback-popup__form-name,
-.callback-popup__form-mail,
-.callback-popup__form-text {
-  line-height: 24px;
-  font-weight: 700;
-}
-
-.callback-popup__close-button {
-  background: url("../img//icon-cross--big.svg") no-repeat 50% 50%;
-}
-
 .map__img-wrapper {
   margin: 0;
 }
@@ -1272,10 +1253,127 @@ body.slider-three {
   position: fixed;
   top: 0;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 100vw;
   height: 100vh;
 
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal[hidden] {
+  display: none;
+}
+
+.callback-popup {
+  position: relative;
+
+  min-width: 478px;
+  padding: 20px 25px 25px;
+
+  background-color: #f8f7f4;
+
+  border-radius: 10px;
+}
+
+.callback-popup__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.callback-popup__title {
+  margin: 0 0 20px;
+
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.callback-popup__form-name,
+.callback-popup__form-mail,
+.callback-popup__form-text {
+  margin-bottom: 20px;
+}
+
+.callback-popup__form-text {
+  margin-bottom: 25px;
+}
+
+.callback-popup__form-name input,
+.callback-popup__form-mail input {
+  width: 267px;
+}
+
+.callback-popup__form-text textarea {
+  width: 100%;
+  height: 155px;
+
+  resize: none;
+}
+
+.callback-popup__form input[type="text"],
+.callback-popup__form input[type="email"],
+.callback-popup__form textarea {
+  display: inline-block;
+
+  padding: 10px 14px 8px;
+
+  vertical-align: top;
+  line-height: 24px;
+  font-weight: 700;
+  color: #323232;
+
+  background-color: #ffffff;
+
+  border: 1px solid rgba(153, 153, 153, 0.52);
+  border-radius: 5px;
+}
+
+.callback-popup__form input[type="text"]::placeholder,
+.callback-popup__form input[type="email"]::placeholder,
+.callback-popup__form textarea::placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
+.callback-popup__form input[type="text"]:hover,
+.callback-popup__form input[type="email"]:hover,
+.callback-popup__form textarea:hover {
+  padding: 9px 13px 7px;
+
+  border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.callback-popup__form input[type="text"]:focus,
+.callback-popup__form input[type="email"]:focus,
+.callback-popup__form textarea:focus  {
+  padding: 9px 13px 7px;
+
+  border: 2px solid rgba(46, 136, 228, 0.52);
+
+  outline: 0;
+}
+
+.callback-popup__form .button {
+  align-self: flex-end;
+
+  padding: 10px 24px;
+}
+
+.callback-popup__close-button {
+  position: absolute;
+  top: 17px;
+  right: 17px;
+
+  width: 17px;
+  height: 18px;
+
+  background: transparent url("../img//icon-cross--big.svg") no-repeat 50% 50%;
+
+  border: 0;
 }
 
 .breadcrumbs-list {
