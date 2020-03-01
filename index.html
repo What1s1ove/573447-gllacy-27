@@ -5,8 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.min.css">
-    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="slider-one">
     <header class="page-header">
@@ -263,7 +262,7 @@
           <a href="tel:+88124502525">8 812 450-25-25</a><br>
           (с 10 до 20 ежедневно)
         </p>
-        <button class="button" type="button">Форма обратной связи</button>
+        <button class="map__callback-button button" type="button">Форма обратной связи</button>
       </address>
       <iframe class="map__iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1583083344599!5m2!1sru!2sua" width="1200" height="430"></iframe>
       <p class="map__img-wrapper">
@@ -343,7 +342,7 @@
     <div class="modal" hidden>
       <section class="callback-popup">
         <h2 class="callback-popup__title">Мы обязательно вам ответим!</h2>
-        <form class="callback-popup__form" method="post" action="https://echo.htmlacademy.ru">
+        <form class="callback-popup__form" name="callback-popup__form" method="post" action="https://echo.htmlacademy.ru">
           <label class="callback-popup__form-name">
             <input type="text" name="feedback-name" placeholder="Имя Фамилия">
             <span class="visually-hidden">Имя Фамилия</span>
@@ -363,5 +362,6 @@
         </button>
       </section>
     </div>
+    <script src="js/popup.min.js"></script>
   </body>
 </html>
