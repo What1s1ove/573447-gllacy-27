@@ -670,6 +670,11 @@ body.slider-three {
   opacity: 1;
 }
 
+.page-footer__social-item a:active {
+  opacity: 0.7;
+}
+
+
 .page-footer__contact-list {
   align-self: center;
 
@@ -1505,6 +1510,19 @@ body.slider-three {
   background-image: url("../img/icon-downdir--active.svg");
 }
 
+.filter__price-output input {
+  width: 24px;
+  padding: 0;
+  margin: 0;
+
+  font: inherit;
+  color: #ffffff;
+  
+  background-color: transparent;
+
+  border: 0;
+}
+
 .filter__price-controls {
   position: relative;
 
@@ -1627,6 +1645,10 @@ body.slider-three {
   background-color: rgba(255, 255, 255, 1);
 }
 
+.filter__fat-list-radio:disabled + label:hover::after {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
 .filter__fat-list label {
   position: relative;
 
@@ -1684,6 +1706,10 @@ body.slider-three {
   background-image: url("../img/icon-checkbox--active.svg");
 }
 
+.filter__fill-list-checkbox:disabled + label::before {
+  opacity: 0.4;
+}
+
 .filter__fill-list label {
   position: relative;
 
@@ -1739,6 +1765,8 @@ body.slider-three {
 
 .filter__submit-button:active {
   color: #323232;
+
+  background-color: #ededed;
 
   box-shadow: inset 0px 2px 1px 0px #696969
 }

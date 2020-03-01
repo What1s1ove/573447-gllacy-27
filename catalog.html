@@ -207,8 +207,20 @@
           <fieldset class="filter__price">
             <legend>
               Цена:
-              <output>100</output> руб. – 
-              <output>500</output> руб.
+              <label class="filter__price-output">
+                <input type="text" name="filter-price-min" value="100" />
+                <span class="visually-hidden">
+                  Минимальная цена
+                </span>
+              </label>
+              руб. –
+              <label class="filter__price-output">
+                <input type="text" name="filter-price-max" value="500" />
+                <span class="visually-hidden">
+                  Максимальная цена
+                </span>
+              </label>
+              руб.
             </legend>
             <div class="filter__price-controls">
               <div class="filter__price-progress">
