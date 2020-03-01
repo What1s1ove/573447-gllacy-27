@@ -1113,8 +1113,7 @@ body.slider-three {
   min-height: 220px;
   padding: 25px 20px;
 
-  background-color: #ffffff;
-  background-image: url("../img/bg-article.jpg");
+  background: #ffffff url("../img/bg-article.jpg");
 
   border-radius: 15px;
 }
@@ -1391,7 +1390,7 @@ body.slider-three {
   width: 17px;
   height: 18px;
 
-  background: transparent url("../img//icon-cross--big.svg") no-repeat 50% 50%;
+  background: transparent url("../img/icon-cross--big.svg") no-repeat 50% 50%;
 
   border: 0;
 }
