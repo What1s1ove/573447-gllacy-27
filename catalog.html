@@ -46,11 +46,13 @@
       </div>
       <ul class="page-header__user-list">
         <li class="page-header__user-item page-header__user-item--search">
-          <a class="page-header__user-item-link" href="#">
+          <a class="page-header__user-item-link page-header__user-item-link--icon-only" href="#">
             <svg fill="#FFF" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17">
               <path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"></path>
             </svg>
-            Поиск
+            <span class="visually-hidden">
+              Поиск
+            </span>
           </a>
           <form class="page-header__search-form" method="post" action="https://echo.htmlacademy.ru">
             <label>
@@ -209,38 +211,41 @@
               <output>500</output> руб.
             </legend>
             <div class="filter__price-controls">
-              <div>
+              <div class="filter__price-progress">
+                <div class="filter__price-progress-bar"></div>
+              </div>
+              <span class="filter__price-control filter__price-control--min">
                 <span class="visually-hidden">Минимальная цена</span>
-              </div>
-              <div>
+              </span>
+              <span class="filter__price-control filter__price-control--max">
                 <span class="visually-hidden">Максимальная цена</span>
-              </div>
+              </span>
             </div>
           </fieldset>
           <fieldset class="filter__fat">
             <legend>Жирность:</legend>
             <ul class="filter__fat-list">
               <li>
-                <label>
-                  <input class="visually-hidden" type="radio" name="filter-fat" value="filter-fat-0">
+                <input id="filter-fat-0" class="filter__fat-list-radio visually-hidden" type="radio" name="filter-fat" value="filter-fat-0">
+                <label for="filter-fat-0">
                   0%
                 </label>
               </li>
               <li>
-                <label>
-                  <input class="visually-hidden" type="radio" name="filter-fat" value="filter-fat-b10" checked>
+                <input id="filter-fat-b10" class="filter__fat-list-radio visually-hidden" type="radio" name="filter-fat" value="filter-fat-b10" checked>
+                <label for="filter-fat-b10">
                   до 10%
                 </label>
               </li>
               <li>
-                <label>
-                  <input class="visually-hidden" type="radio" name="filter-fat" value="filter-fat-b30">
+                <input id="filter-fat-b30" class="filter__fat-list-radio visually-hidden" type="radio" name="filter-fat" value="filter-fat-b30">
+                <label for="filter-fat-b30">
                   до 30%
                 </label>
               </li>
               <li>
-                <label>
-                  <input class="visually-hidden" type="radio" name="filter-fat" value="filter-fat-a30">
+                <input id="filter-fat-a30" class="filter__fat-list-radio visually-hidden" type="radio" name="filter-fat" value="filter-fat-a30">
+                <label for="filter-fat-a30">
                   выше 30%
                 </label>
               </li>
@@ -250,32 +255,32 @@
             <legend>Наполнители:</legend>
             <ul class="filter__fill-list">
               <li>
-                <label>
-                  <input class="visually-hidden" type="checkbox" name="filter-fill-chocolate" checked>
+                <input id="filter-fill-chocolate" class="filter__fill-list-checkbox visually-hidden" type="checkbox" name="filter-fill-chocolate" checked>
+                <label for="filter-fill-chocolate">
                   шоколадные
                 </label>
               </li>
               <li>
-                <label>
-                  <input class="visually-hidden" type="checkbox" name="filter-fill-sugar" checked>
+                <input id="filter-fill-sugar" class="filter__fill-list-checkbox visually-hidden" type="checkbox" name="filter-fill-sugar" checked>
+                <label for="filter-fill-sugar">
                   сахарные присыпки
                 </label>
               </li>
               <li>
-                <label>
-                  <input class="visually-hidden" type="checkbox" name="filter-fill-fruit">
+                <input id="filter-fill-fruit" class="filter__fill-list-checkbox visually-hidden" type="checkbox" name="filter-fill-fruit">
+                <label for="filter-fill-fruit">
                   фрукты
                 </label>
               </li>
               <li>
-                <label>
-                  <input class="visually-hidden" type="checkbox" name="filter-fill-syrup">
+                <input id="filter-fill-syrup" class="filter__fill-list-checkbox visually-hidden" type="checkbox" name="filter-fill-syrup">
+                <label for="filter-fill-syrup">
                   сиропы
                 </label>
               </li>
               <li>
-                <label>
-                  <input class="visually-hidden" type="checkbox" name="filter-fill-jam">
+                <input id="filter-fill-jam" class="filter__fill-list-checkbox visually-hidden" type="checkbox" name="filter-fill-jam">
+                <label for="filter-fill-jam">
                   джемы
                 </label>
               </li>
@@ -291,7 +296,7 @@
             <article>
               <p class="icecream__item-img-wrapper">
                 <img src="img/picture-icecream1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                <b class="icecream__item-price">310 &#8381;<span>кг</span></b>
+                <b class="icecream__item-price">310 &#8381;<span>/кг</span></b>
               </p>
               <a class="icecream__item-title" href="#">
                 <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
@@ -303,7 +308,7 @@
             <article>
               <p class="icecream__item-img-wrapper">
                 <img src="img/picture-icecream2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-                <b class="icecream__item-price">380 &#8381;<span>кг</span></b>
+                <b class="icecream__item-price">380 &#8381;<span>/кг</span></b>
               </p>
               <a class="icecream__item-title" href="#">
                 <h3>Сливочно-кофейное с кусочками шоколада</h3>
@@ -315,7 +320,7 @@
             <article>
               <p class="icecream__item-img-wrapper">
                 <img src="img/picture-icecream3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                <b class="icecream__item-price">355 &#8381;<span>кг</span></b>
+                <b class="icecream__item-price">355 &#8381;<span>/кг</span></b>
               </p>
               <a class="icecream__item-title" href="#">
                 <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
@@ -327,7 +332,7 @@
             <article>
               <p class="icecream__item-img-wrapper">
                 <img src="img/picture-icecream4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-                <b class="icecream__item-price">415 &#8381;<span>кг</span></b>
+                <b class="icecream__item-price">415 &#8381;<span>/кг</span></b>
               </p>
               <a class="icecream__item-title" href="#">
                 <h3>Сливочное крем-брюле с карамельной подливкой</h3>
@@ -339,10 +344,10 @@
             <article >
               <p class="icecream__item-img-wrapper">
                 <img src="img/picture-icecream5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
-                <b class="icecream__item-price">325 &#8381;<span>кг</span></b>
+                <b class="icecream__item-price">325 &#8381;<span>/кг</span></b>
               </p>
               <a class="icecream__item-title" href="#">
-                <h3>Сливочное с брусничным джемом</h3>
+                <h3>Сливочное с брусничным<br> джемом</h3>
               </a>
               <a class="button" href="#">Быстрый просмотр</a>
             </article>
@@ -351,7 +356,7 @@
             <article >
               <p class="icecream__item-img-wrapper">
                 <img src="img/picture-icecream6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
-                <b class="icecream__item-price">410 &#8381;<span>кг</span></b>
+                <b class="icecream__item-price">410 &#8381;<span>/кг</span></b>
               </p>
               <a class="icecream__item-title" href="#">
                 <h3>Сливочно-черничное с цельными ягодами черники</h3>
@@ -363,7 +368,7 @@
             <article>
               <p class="icecream__item-img-wrapper">
                 <img src="img/picture-icecream7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
-                <b class="icecream__item-price">375 &#8381;<span>кг</span></b>
+                <b class="icecream__item-price">375 &#8381;<span>/кг</span></b>
               </p>
               <a class="icecream__item-title" href="#">
                 <h3>Сливочно-лимонное с карамельной присыпкой</h3>
@@ -375,7 +380,7 @@
             <article>
               <p class="icecream__item-img-wrapper">
                 <img src="img/picture-icecream8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
-                <b class="icecream__item-price">320 &#8381;<span>кг</span></b>
+                <b class="icecream__item-price">320 &#8381;<span>/кг</span></b>
               </p>
               <a class="icecream__item-title" href="#">
                 <h3>Сливочное с шоколадной стружкой</h3>
@@ -387,10 +392,10 @@
             <article>
               <p class="icecream__item-img-wrapper">
                 <img src="img/picture-icecream9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
-                <b class="icecream__item-price">440 &#8381;<span>кг</span></b>
+                <b class="icecream__item-price">440 &#8381;<span>/кг</span></b>
               </p>
               <a class="icecream__item-title" href="#">
-                <h3>Сливочно-ванильное с кусочками шоколада</h3>
+                <h3>Сливочно-ванильное с<br> кусочками шоколада</h3>
               </a>
               <a class="button" href="#">Быстрый просмотр</a>
             </article>
@@ -399,7 +404,7 @@
             <article>
               <p class="icecream__item-img-wrapper">
                 <img src="img/picture-icecream10.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
-                <b class="icecream__item-price">435 &#8381;<span>кг</span></b>
+                <b class="icecream__item-price">435 &#8381;<span>/кг</span></b>
               </p>
               <a class="icecream__item-title" href="#">
                 <h3>Сливочноe с ментоловым сиропом</h3>
@@ -411,7 +416,7 @@
             <article>
               <p class="icecream__item-img-wrapper">
                 <img src="img/picture-icecream11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
-                <b class="icecream__item-price">355 &#8381;<span>кг</span></b>
+                <b class="icecream__item-price">355 &#8381;<span>/кг</span></b>
               </p>
               <a class="icecream__item-title" href="#">
                 <h3>Сливочное с кусочками черного шоколада</h3>
@@ -423,7 +428,7 @@
             <article>
               <p class="icecream__item-img-wrapper">
                 <img src="img/picture-icecream12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
-                <b class="icecream__item-price">420 &#8381;<span>кг</span></b>
+                <b class="icecream__item-price">420 &#8381;<span>/кг</span></b>
               </p>
               <a class="icecream__item-title" href="#">
                 <h3>Сливочное с мятным сиропом</h3>
