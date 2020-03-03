@@ -101,13 +101,15 @@ body.slider-3 {
 .page-header {
   position: relative;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
   width: 1200px;
   margin: 0 auto;
   padding: 9px 27px 0;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .page-header__nav-wrapper {
@@ -813,12 +815,6 @@ body.slider-3 {
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
-.icecream__item article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .icecream__item-img-wrapper {
   position: relative;
 
@@ -860,7 +856,6 @@ body.slider-3 {
 .icecream__item-title {
   position: relative;
 
-  text-align: center;
   color: #ffffff;
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.3);
@@ -876,6 +871,7 @@ body.slider-3 {
 .icecream__item-title h3 {
   margin: 0;
 
+  text-align: center;
   font-size: 16px;
 }
 
