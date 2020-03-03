@@ -1134,6 +1134,10 @@ body.slider-3 {
   color: #323232;
 }
 
+.main-article a:hover {
+  text-decoration: none;
+}
+
 .main-article h2 {
   max-width: 281px;
   margin: 0;
