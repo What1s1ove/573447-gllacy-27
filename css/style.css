@@ -616,11 +616,10 @@ body.slider-3 {
 }
 
 .page-header__schedule a {
-  display: inline-block;
+  display: block;
 
   margin-top: 5px;
 
-  vertical-align: top;
   font-size: 22px;
   line-height: 24px;
   color: #ffffff;
@@ -921,6 +920,8 @@ body.slider-3 {
 
 .offers__slider-item b {
   display: inline-block;
+
+  max-width: 670px;
   margin: 0 0 30px;
 
   vertical-align: top;
@@ -1255,6 +1256,8 @@ body.slider-3 {
 }
 
 .map__address-number a {
+  display: block;
+
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
