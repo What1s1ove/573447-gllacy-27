@@ -1225,7 +1225,7 @@ body.slider-3 {
   top: 63px;
   transform: translateX(-50%);
 
-  min-width: 302px;
+  max-width: 302px;
   padding: 30px 25px 31px;
 
   font-size: 14px;
